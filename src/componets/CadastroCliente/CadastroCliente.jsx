@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useState, useRef } from "react";
-import Button from "@mui/material/Button";
-import { Body, ButtonJeff } from "./styles";
+
 
 const servico = axios.create({
   baseURL: "http://localhost:8080",
@@ -26,50 +25,9 @@ function Cadastrocliente() {
 
   return (
     <>
-      <div>
-        <header>
-          <h1>Site cadastro em React</h1>
-        </header>
+    
+    
 
-        <form onSubmit={handleCadastrarCliente}>
-          <div>
-            <fieldset>
-              <div>
-                <label>Digite o seu nome completo: </label>
-                <br />
-                <input type="text" ref={nomeRef} />
-              </div>
-              <br />
-              <div>
-                <label htmlFor="">Digite seu e-mail: </label>
-                <br />
-                <input type="text" ref={emailRef} />
-              </div>
-              <br />
-              <div class="boxQuest">
-                <label htmlFor="">Digite seu numero: </label>
-                <br />
-                <input type="number" ref={telefoneRef} />
-              </div>
-              <br />
-              <div class="boxQuest">
-                <label htmlFor="">O número da O.S do seu instrumento: </label>
-                <br />
-                <input type="number" ref={idInstrumentoRef} />
-
-                <br />
-                <br />
-                <br />
-                <div class="bt-container">
-                  <Button variant="contained" color="success" type="submit">
-                    Enviar
-                  </Button>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-        </form>
-      </div>
     </>
   );
 }

@@ -5,7 +5,7 @@ import {
   SeparadorDiv,
   SeparadorDivDois,
   LogoMarca,
-} from "./estiloHome";
+} from '../EstiloPaginas/Style';
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -33,7 +33,7 @@ function Home() {
           <SeparadorDiv></SeparadorDiv>
           <Botao
             onClick={() => {
-              navigate("cadastrocliente");
+              navigate("cadastroinstrumento");
             }}
           >
             Admin
